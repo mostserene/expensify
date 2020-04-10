@@ -9,6 +9,7 @@ import {setTextFilter} from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 import configureStore from './store/configureStore';
 
+//this file is in git 
 
 
 const store = configureStore();
