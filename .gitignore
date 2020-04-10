@@ -1,1 +1,12 @@
-node_modules/
+# ignore all 
+/* 
+# but this 
+!/.packagge.json 
+!/yarn.lock
+!/webpack.config.js
+!/jest.config.json
+!/hold.zip 
+!/src
+!/public
+!/src
+
