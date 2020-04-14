@@ -21,6 +21,8 @@ export default (expenses, { text, sortBy, startDate, endDate }) => {
 
 import moment from 'moment';
 
+import DatePicker from 'react-datepicker';
+
 // Get visible expenses
 
 export default (expenses, { text, sortBy, startDate, endDate }) => {

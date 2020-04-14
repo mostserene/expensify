@@ -35,6 +35,9 @@ const book = {
 const {pub_name='Self Published'} = book.publisher;
 console.log(`${pub_name}`);
  */
+require("normalize.css/normalize.css");
+
+require("../styles/styles.scss");
 
  const address = ['1534 McKinley','San Antonio','Texas','78210'];
 

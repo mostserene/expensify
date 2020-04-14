@@ -1,9 +1,10 @@
 import React from 'react';
-import moment from 'moment';
-//import 'react-dates/initialize';
+//import moment from 'moment';
+import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
-import {SingleDatePicker} from 'react-dates';
-
+import moment from 'moment';
+//import {SingleDatePicker} from 'react-dates';
+import {DatePicker} from "react-datepicker";
 
 
 const date = moment().format("MMMM Do, YYYY");
@@ -12,7 +13,7 @@ console.log(date);
 
 
 
-export default class ExpenseForm extends React.Component{
+export default class ExpenseForm extends React.PureComponent{
     constructor(props) {
         super(props);
 
@@ -97,7 +98,7 @@ export default class ExpenseForm extends React.Component{
              onChange={this.amountValidator}
            />
 
-           <SingleDatePicker 
+           <DatePicker 
            date={this.state.createdAt}
            onDateChange={this.onDateChange}
            focused={this.state.calendarFocused}

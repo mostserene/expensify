@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'normalize.css/normalize.css';
-import './styles/styles.scss';
+//import 'normalize.css';
+//import './styles/styles.scss';
 import AppRouter from './routers/AppRouter.js';
 import {Provider} from 'react-redux';
 import {addExpense} from './actions/expenses';
 import {setTextFilter} from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 import configureStore from './store/configureStore';
-
+import 'react-dates/initialize';
+import './styles/styles.scss';
+import 'react-dates/lib/css/_datepicker.css';
 
 //this file is in git 
 
@@ -44,7 +46,7 @@ createdAt: 0};
   const state = store.getState();
   const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
   console.log( visibleExpenses);
- console.log(store.getState());
+ //console.log(store.getState());
 const jsx = (
     <Provider store={store}>
     <AppRouter />

@@ -1,4 +1,7 @@
+//import moment from 'moment';
 import moment from 'moment';
+import 'react-dates/initialize';
+
 
 const filterReducerDefaultState = {
     text: '',

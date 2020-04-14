@@ -2,17 +2,27 @@ import React from "react";
 import { connect } from "react-redux";
 
 import moment from 'moment';
+
+//import DatePicker from 'react-date-picker';
+
 import {setTextFilter, setSortByAmount, 
   setSortByDate, 
   setStartDate, 
   setEndDate} 
 from "../actions/filters";
-//import 'react-dates/initialize';
-import { DateRangePicker, DayPickerRangeController } from "react-dates";
+
+//import { DateRangePicker, DayPickerRangeController } from "react-dates";
+import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
+import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
+
+//import "react-date-picker/dist/Datepicker.css";
+
+//import "react-datepicker/dist/react-datepicker.css";
 
 
-class ExpenseListFilters extends React.Component {
+
+class ExpenseListFilters extends React.PureComponent {
     state = {
       calenderFocused: null,
 
