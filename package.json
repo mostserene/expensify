@@ -28,7 +28,7 @@
     "core-js": "3",
     "cors": "^2.8.5",
     "css-loader": "3.5.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fsevents": "1.2.9",
     "live-server": "^1.2.0",
     "ls": "^0.2.1",
